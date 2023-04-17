@@ -37,6 +37,8 @@ const ItineraryCard = ({cardInfo, num}) => {
 };
 
 const ItineraryCards = ({itineraries}) =>{
+
+    console.log("itinerarycard generated")
     return(
         <>
             {itineraries.map((item, index) => (

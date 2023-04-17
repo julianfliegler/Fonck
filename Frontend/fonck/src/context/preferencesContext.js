@@ -13,6 +13,7 @@ export function PreferencesProvider({children}) {
     const [food, setFood] = useState({American: "", Asian: "", Mediterranean: "", Latin: "", European: ""})
     var [price, setPrice] = useState("")
     const [searchSubmit, setSearchSubmit] = useState(false)
+    var newFood = Object.values(food);
 
     useEffect(() => {
         console.log("Dates Changed", dates);
@@ -28,7 +29,6 @@ export function PreferencesProvider({children}) {
 
     useEffect(() => {
         console.log("Food Changed", food);
-
     }, [food]);
 
     useEffect(() => {
@@ -58,7 +58,7 @@ export function PreferencesProvider({children}) {
                 dates: dates,
                 location: location,
                 boundingTimes: ['7:00AM','9:00PM'],
-                food: [1, 2, 3, 4, 5],
+                food: newFood,
                 price: price,
                 attractions: attractions,
             }

@@ -66,8 +66,8 @@ const BuildItinerary = () => {
           {searchSubmit && 
             <ItineraryCards itineraries={itineraries}/> }
 
-         
-          
+
+
           </div>
         </div>
       </div>
